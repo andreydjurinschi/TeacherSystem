@@ -1,6 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace TeacherSystem.DBContexts;
 
-public class DbContext
+public class ApplicationDbContext : DbContext
 {
-    
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 }
